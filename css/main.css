@@ -1,0 +1,324 @@
+/* normalize.css v4.0.0 | MIT License | github.com/necolas/normalize.css */
+@import url('normalize.css');
+
+/*font stacks*/
+@import url('fonts.css');
+
+/* NAV
+*****************************************************************/
+
+/* SIDE-NAV
+*****************************************************************/
+
+.nav-side {
+  z-index: 1050;
+
+  position: fixed;
+  left: 0;
+  top: 0;
+
+  height: 100%;
+  width: 100%;
+  max-width: 300px;
+
+  background-color: #1d0645;
+  color: white;
+
+  box-sizing: border-box;
+
+  padding: 20px;
+  margin-left: -300px;
+  
+  transition: margin 200ms ease-in-out;
+}
+
+.nav-side.nav-open {
+  margin-left: 0;
+  box-shadow: 1px 1px 3px rgba(0, 0, 0, 0.1);
+}
+
+.nav-side-toggle {
+  position: absolute;
+  right: -110px;
+  top: 0;
+  width: 110px;
+  height: 40px;
+  background-color: #1d0645;
+  text-decoration: none;
+  text-align: center;
+  border-bottom-right-radius: 20px;
+  box-shadow: 1px 0 3px rgba(0, 0, 0, 0.1);
+}
+
+.nav-side-toggle:hover {
+  text-decoration: none;
+}
+
+.nav-side-toggle:focus {
+  text-decoration: none;
+}
+
+.nav-side-toggle:before {
+  content: "Write me!";
+  font-weight: 600;
+  font-size: 20px;
+  color: white;
+  line-height: 40px;
+}
+
+.nav-side.nav-open .nav-side-toggle:before {
+  content: "X";
+}
+
+
+.nav-side__caption {
+	color: white;
+    font-size: 24px;
+    text-align: center;
+    margin-top: 61px;
+}
+
+.nav-side__smile {
+	position: relative;
+	top: 50px;
+
+	color: white;
+	font-size: 30px;
+}
+
+.nav-side__list {
+	display: block;
+	margin-left: 25px;
+	margin-top: 330px;
+}
+
+.nav-side__item {
+	display: block;
+	padding: 10px;
+}
+
+.nav-side__item__link {
+	text-decoration: none;
+	font-size: 35px;
+	color: white;
+}
+
+/*@media (max-width: 430px) {
+	.nav-side-toggle {
+	  right: 0px;
+	}
+}*/
+/* EO SIDE-NAV
+*****************************************************************/
+
+.wrapper {
+	height: 100%;
+	margin: 0 auto;
+}
+
+
+
+.header-nav {
+	/*display: none;*/
+
+    background: Aquamarine;
+    width: 100%;
+
+	position: fixed;
+	z-index: 1000;
+}
+
+.container {
+}
+
+.header-nav-list {
+    margin: 0 auto;
+    padding: 15px 0;
+}
+
+.header-nav__item {
+	display: inline-block;
+	background-color: Aquamarine;
+}
+
+.header-nav__item:hover {
+	background-color: DarkCyan;
+}
+
+.header-nav__item-link {
+	display: inline-block;
+	text-decoration: none;
+	padding: 15px 30px;
+	color: black;
+	font-size: 25px;
+	font-weight: 400;
+}
+
+.header-nav__item-link:hover {
+	color: white;
+	text-decoration: none;
+}
+
+.header-nav__item-link:focus {
+	display: inline-block;
+	text-decoration: none;
+	padding: 15px 30px;
+	color: white;
+	font-size: 25px;
+	font-weight: 400;
+}
+
+.active {
+	border: 2px solid white;
+}
+
+.center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.pdl {
+	padding-left: 40px;
+}
+
+/* EO NAV
+*****************************************************************/
+
+.wrapper__inner {
+	height: 100%;
+	margin: 0 auto;
+}
+
+.section {
+    overflow: hidden;
+
+	width: 100%;
+	height:100vh;
+
+	display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section__title {
+	color: white;
+	font-size: 5em;
+	font-weight: 400;
+}
+
+.color1 {
+	background-color: snow;
+}
+
+.color2 {
+	background-color: snow;
+}
+
+.color3 {
+	background-color: snow;
+}
+
+
+/* content
+*****************************************************************/
+
+.myname {
+	font-size: 50pt;
+}
+
+/* slider
+*****************************************************************/
+
+.carousel{
+	margin-bottom: 75px;
+	width: 100%;
+}
+.simg {
+	width: 100%;
+}
+.carousel-caption {
+}
+.carousel-caption1 {
+	margin-bottom: 60%;
+	line-height: 30px;
+	font-size: 23px;
+}
+.carousel-caption2 {
+	margin-bottom: 50%;
+	line-height: 30px;
+}
+.carousel-caption3 {
+	margin-bottom: 50%;
+	line-height: 30px;
+}
+
+.carousel-control {
+    top: 15%;
+}
+
+.skills {
+	margin-top: 100px;
+	margin-bottom: 50px;
+}
+
+/* portfolio
+*****************************************************************/
+
+.skills {
+	margin-bottom: 75px;
+	width: 100%;
+}
+
+.portfolio {
+
+}
+.portfolio-caption {
+	margin-bottom: 50px;
+	text-align: center;
+	text-transform: uppercase;
+}
+.example {
+	box-sizing: border-box;
+	width: 33%;
+	height: 300px;
+}
+.pic {
+	max-width: 100%;
+	max-height: 100%;
+}
+.caption {
+	text-align: center;
+}
+
+.portfolio__img {
+	height: 350px;
+}
+.thumbnail {
+	border: none;
+}
+
+/* footer
+*****************************************************************/
+
+.footer {
+	height: 250px;
+	background: #1d0645;
+	color: #eee;
+	font-size: 16px;
+}
+.footer-nav {
+	float: right;
+}
+.footer-caption {
+	margin-top: 125px;
+	font-size: 25pt;
+}
+.footer-link {
+	margin-top: 50px;
+	color: #ffffff;
+	font-size: 20pt;
+}
+.footer-nav .footer-nav__item {
+	display: inline-block;
+}
